@@ -1,0 +1,3 @@
+#Erstellen Sie einen String, der Ihren Vornamen entha ̈lt, und einen weiteren mit Ihrem Nachnamen. Berechnen Sie die La ̈nge Ihres gesamten Namens und speichern Sie dann Vor- und Nachname in einen weiteren String, getrennt durch ein Leerzeichen. Geben Sie nun Ihren Namen und seine La ̈nge in einem zusammengesetzten String aus. Erstellen Sie eine Liste mit den 5 Vokalen der deutschen Sprache.
+
+#Uberpru ̈fen Sie, ob jener Vokal in Ihrem Namen vorhanden ist, der an der Stelle der Liste ist, welche der La ̈nge Ihres Namens mod 5 entspricht. Geben Sie die gewonnene Erkenntnis aus. Testen Sie nun mit einer for Schleife, ob alle 5 Vokale in Ihrem Namen vorkommen und geben Sie auch diese Erkenntnis aus. (6 Punkte)
