@@ -18,4 +18,5 @@ except :
 	
 for n in gesamter_name:
 	for v in iter(vokale):
-		print(n+v)
+		if n == v:
+			print("Hier ist ein Vokal in deinem Namen:", gesamter_name.index(n))
