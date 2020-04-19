@@ -4,12 +4,13 @@ integer = int(input('gib eine Zahl ein: '))
 string = str(input('gib jetzt noch Text ein: '))
 bool = bool(input('gib irgendwas ein, das ist die boolean value Eingabe: '))
 tupel = (integer,string,bool)
+print(type(bool))
 
 
 x = tupel[0]
 #output: 3
 
-l = list(tupel[1:3])
+l = list(tupel[1:2])
 #output: ['i', False]
 
 l.append(x)
