@@ -15,17 +15,27 @@ def bestand(A, a, t):
 	return ergebnis
 
 #a.
-a_wert = bestand(1000,2,14)
-print(a_wert)
+a_wert = bestand(1000,2,14/2) 
+print('a. Bei A = 1000 umd einer Verdopplung alle zwei Tage hat man nach zwei Woche den Wert: ', int(a_wert), '', sep = '\n')
 
 #b.
-b_wert = bestand(1000,2,8)
-print(b_wert)
+b_tage = 8
+b_wert = bestand(1000,2,b_tage/2)
+print('b. Wert bei einer Reduzierung auf 8 Tage: ',int(b_wert), '', sep ='\n')
 
 #c.
-#pandas for DataFrame and visualisation possibility?
+print('c.')
+c_tage = 0
+while c_tage <= 8:
+	c_wert = bestand(1000, 2, c_tage/2)
+	c_tage = c_tage + 1
+	print('Am ', c_tage, '. Tag ist der Wert: ', round(c_wert), sep = '')
 
-#d.
+#d. 
+def bestandtab(A, T, t):
+	while 
+	ergebnistab = A * T ** t
+	return ergebnistab
 #neue Funktion mit Tupel. eher import pandas?
 
 
