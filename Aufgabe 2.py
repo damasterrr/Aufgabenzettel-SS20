@@ -15,3 +15,4 @@ multiplikation = b * o
 division = b / o
 
 print(addition, subtraktion, multiplikation, division)
+#alles funktioniert

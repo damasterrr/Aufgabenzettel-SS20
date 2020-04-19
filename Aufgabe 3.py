@@ -4,29 +4,25 @@ integer = int(input('gib eine Zahl ein: '))
 string = str(input('gib jetzt noch Text ein: '))
 bool = bool(input('gib irgendwas ein, das ist die boolean value Eingabe: '))
 tupel = (integer,string,bool)
-print(type(bool))
 
+x = int(tupel[0])
+#integer
 
-x = tupel[0]
-#output: 3
+liste = list(tupel[1:3])
+#['string', bool]
+liste.append(x)
+liste.reverse()
 
-l = list(tupel[1:2])
-#output: ['i', False]
+#Reihenfolge der Liste: integer, bool, string. wir müssen also [1] mit [2] wechseln
 
-l.append(x)
-l.reverse()
-#Reihenfolge der Liste: integer, bool, string
-l[1],l[2] = l[2],l[1]
+liste[1],liste[2] = liste[2],liste[1]
 
-print('nun deine ursprugliche Liste nach allen Monipulationen: ',l)
+print('nun deine ursprugliche Liste nach allen Monipulationen: ',liste)
 
 #Wir überprüfen jetzt, die input und output Listen tatsächlich übereinstimmen 
-
-for i in tupel_np:
-	for o in l_np:
-		print(i)
-		if i+o == o+i:
-			print('die beiden Listen sind tatsächlich identisch')
-		else:
-			raise Exception('irgendwas stimmt im Script nicht')
+for t in tupel:
+	if tupel.index(t) == liste.index(t):
+		print("alles ist gut, die beiden Listen sind identisch")
+	else:
+		raise TypeError("irgendwas ist im Script falsch")
 			
