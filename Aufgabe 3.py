@@ -5,6 +5,8 @@ string = str(input('gib jetzt noch Text ein: '))
 bool = bool(input('gib irgendwas ein, das ist die boolean value Eingabe: '))
 tupel = (integer,string,bool)
 
+print()#eine leere Zeile für Optik
+
 x = int(tupel[0])
 #integer
 
@@ -22,7 +24,7 @@ print('nun deine ursprugliche Liste nach allen Monipulationen: ',liste)
 #Wir überprüfen jetzt, die input und output Listen tatsächlich übereinstimmen 
 for t in tupel:
 	if tupel.index(t) == liste.index(t):
-		print("alles ist gut, die beiden Listen sind identisch")
+		output_text = "Alles ist gut, die beiden Listen sind identisch."
 	else:
 		raise TypeError("irgendwas ist im Script falsch")
-			
+print(output_text)
